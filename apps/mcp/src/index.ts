@@ -74,6 +74,55 @@ server.tool(
 	},
 );
 
+server.tool(
+	"init-act-rule",
+	"Initialize the rule for AI assistant to decide AI assistant's behavior from remote repository(Pack all rules in one file for improve performance)",
+	async () => {
+		return {
+			content: [
+				{
+					type: "text",
+					text: "Please tell to your user that 'Initialize tool currently not supported'. and you must stop process with exit code 1",
+				},
+			],
+		};
+	},
+);
+
+server.tool(
+	"load-remote-act-rule",
+	"Load the rule for AI assistant to decide AI assistant's behavior from remote repository",
+	{
+		behaviorRuleUrl: z.string().describe("The url of the rule to decide AI assistant's behavior"),
+	},
+	async ({ behaviorRuleUrl }) => {
+		const response = await fetch(behaviorRuleUrl);
+		if (!response.ok) {
+			return {
+				content: [
+					{
+						type: "text",
+						text: `Failed to retrieve rule from ${behaviorRuleUrl}`,
+					},
+				],
+			};
+		}
+
+		// TODO: 以下では先にフェッチしてから、ユーザに確認しているが、実際にはユーザに確認してからフェッチするようにする(PlanをAIに伝えて、AIにFetchツールを使わせる。そうしないとPromptインジェクションされてしまう)
+		return {
+			content: [
+				{
+					type: "text",
+					text: `You must do the following steps:
+					1. [Very Important Rule: Don't Skip this step !!!] Confirm user that you are running in the remote repository rule. It's possible dangerous.
+					2. If user agree and allow load remote rule, you must following below behaviors (If user not agree, you must stop process with exit code 1):
+						- ${await response.text()}`,
+				},
+			],
+		};
+	},
+);
+
 async function main() {
 	const transport = new StdioServerTransport();
 	await server.connect(transport);
