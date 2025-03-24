@@ -13,9 +13,9 @@
   );
   
   --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #7928ca 20%,
-    #ff0080 80%
+    120deg,
+    #bd34fe 10%,
+    #646cff 90%
   );
   --vp-home-hero-image-filter: blur(40px);
 }
@@ -23,9 +23,9 @@
 /* Dark mode adjustments */
 .dark {
   --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #7928ca 20%,
-    #ff0080 80%
+    120deg,
+    #bd34fe 10%,
+    #646cff 90%
   );
 }
 
