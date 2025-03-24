@@ -35,3 +35,8 @@ A document linting tool by AI. This is an experimental project that I am explori
 
 ## NOTE:
 Currently, AI Coding tools like cline are not available to load url in text files(but @url command can load url), so I created this AI linting tool.
+
+
+## Requirements:
+- Sonnet 3.7 model
+  (Gemini PRO 2.0 model don't work well for this project, so I recommend Sonnet 3.7 model)
