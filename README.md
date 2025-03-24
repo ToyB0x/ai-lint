@@ -20,13 +20,47 @@ AI-Lint is an experimental project exploring AI capabilities for document lintin
 
 ## Installation
 
-```bash
-# Install using npm
-npm install @ai-lint/mcp
+Currently, AI-Lint is in development and requires manual installation:
 
-# Or using pnpm
-pnpm add @ai-lint/mcp
+1. Clone the repository:
+```bash
+git clone https://github.com/ToyB0x/ai-lint.git
+cd ai-lint
 ```
+
+2. Install dependencies and build the MCP server:
+```bash
+pnpm install
+cd apps/mcp
+pnpm build
+```
+
+3. Configure your MCP settings file to include AI-Lint:
+
+For VSCode Cline extension, edit the MCP settings file located at:
+`~/Library/Application Support/Code/User/globalStorage/rooveterinaryinc.roo-cline/settings/cline_mcp_settings.json`
+
+For Claude desktop app, edit:
+`~/Library/Application Support/Claude/claude_desktop_config.json`
+
+Add the following configuration:
+```json
+{
+  "mcpServers": {
+    "@ai-lint/mcp": {
+      "command": "node",
+      "args": [
+        "/PATH/TO/YOUR_DIR/ai-lint/apps/mcp/dist/index.js"
+      ],
+      "autoApprove": [],
+      "disabled": false
+    },
+    // other MCP servers...
+  }
+}
+```
+
+Replace `/PATH/TO/YOUR_DIR` with the actual path to your cloned repository.
 
 ## Usage
 
@@ -42,34 +76,15 @@ You (AI assistants like Cline or Roo Code) must follow these important rules:
 - If set up correctly, execute @ai-lint/mcp's load-remote-act-rule and apply the following rules
 ```
 
-2. Configure your MCP server settings to include AI-Lint:
-
-```json
-{
-  "mcpServers": {
-    "ai-lint": {
-      "command": "node",
-      "args": ["./node_modules/@ai-lint/mcp/dist/index.js"],
-      "env": {
-        "AI_LINT_CONFIG_PATH": "./ai-lint.config.json"
-      }
-    }
-  }
-}
-```
+2. Restart your AI assistant to ensure it recognizes the new MCP server and rules.
 
 ### Linting Documents
 
-```bash
-# Lint a specific file
-ai-lint lint path/to/document.md
+Once the MCP server is properly configured, your AI assistant will automatically:
 
-# Lint and fix issues
-ai-lint lint:fix path/to/document.md
-
-# List available rules
-ai-lint rules:list
-```
+- Check if documents follow specified rules
+- Suggest fixes for rule violations
+- Apply rules when generating or modifying content
 
 ### Example Rule Configuration
 
@@ -245,6 +260,27 @@ Technical terms must be used consistently throughout the document. The first occ
   - TypeScript API
 
 ## Development
+
+### Project Structure
+
+```
+ai-lint/
+├── apps/
+│   └── mcp/           # MCP server implementation
+│       ├── dist/      # Compiled JavaScript files
+│       ├── src/       # TypeScript source files
+│       ├── package.json
+│       ├── tsconfig.json
+│       └── tsup.config.ts
+├── rules/             # Rule definitions
+│   ├── config-clinerule-mcp/
+│   ├── core-priority-logical/
+│   ├── core-priority-order/
+│   └── meta-change-log/
+├── .clinerules        # AI instructions for this project
+├── package.json
+└── README.md
+```
 
 ### TODO
 
