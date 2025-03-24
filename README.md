@@ -27,6 +27,9 @@ A document linting tool by AI. This is an experimental project that I am explori
   - For user guide
   - For product development
   - For internal document
+- Provide CLI and dynamic package API for rules with following features:
+  - can be used in CI/CD (with AI API key)
+  - can be used with typescript code (just like npm package)
 
 ## TODO:
 - Define rule of rules
