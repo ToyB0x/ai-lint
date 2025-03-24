@@ -7,7 +7,13 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": []
+		"ignore": [
+			"**/node_modules/**",
+			"**/build/**",
+			"**/dist/**",
+			"**/generated/**",
+			"**/.turbo/**"
+		]
 	},
 	"formatter": {
 		"enabled": true,
