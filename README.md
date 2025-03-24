@@ -31,6 +31,12 @@ A document linting tool by AI. This is an experimental project that I am explori
 ## TODO:
 - Define rule of rules
 - Add Rule
+- Crate core function for tools (currently, inner tool function is all most dynamically generated AI prompt. But like static package manager, if these functions also become static, it will be more efficient, faster and stable.)
 
 ## NOTE:
 Currently, AI Coding tools like cline are not available to load url in text files(but @url command can load url), so I created this AI linting tool.
+
+
+## Requirements:
+- Sonnet 3.7 model
+  (Gemini PRO 2.0 model don't work well for this project, so I recommend Sonnet 3.7 model)
