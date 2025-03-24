@@ -20,12 +20,12 @@ export default defineConfig({
 		nav: [
 			{ text: "Home", link: "/" },
 			{ text: "Guide", link: "/guide" },
-			{ text: "API", link: "/api-examples" },
+			{ text: "API", link: "/api" },
 			{
 				text: "Resources",
 				items: [
 					{ text: "Rule Examples", link: "/guide" },
-					{ text: "API Reference", link: "/api-examples" },
+					{ text: "API Reference", link: "/api" },
 				]
 			},
 		],
@@ -42,7 +42,7 @@ export default defineConfig({
 				text: "Guide",
 				items: [
 					{ text: "Markdown Examples", link: "/guide" },
-					{ text: "Runtime API Examples", link: "/api-examples" },
+					{ text: "Runtime API Examples", link: "/api" },
 				],
 			},
 		],

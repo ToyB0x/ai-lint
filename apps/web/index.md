@@ -17,7 +17,7 @@ hero:
       link: https://github.com/ToyB0x/ai-lint
     - theme: alt
       text: API Examples
-      link: /api-examples
+      link: /api
 
 features:
   - title: Rule-Based Linting
