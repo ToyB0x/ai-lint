@@ -19,12 +19,12 @@ export default defineConfig({
 		logo: '/logo.svg',
 		nav: [
 			{ text: "Home", link: "/" },
-			{ text: "Guide", link: "/markdown-examples" },
+			{ text: "Guide", link: "/guide" },
 			{ text: "API", link: "/api-examples" },
 			{
 				text: "Resources",
 				items: [
-					{ text: "Rule Examples", link: "/markdown-examples" },
+					{ text: "Rule Examples", link: "/guide" },
 					{ text: "API Reference", link: "/api-examples" },
 				]
 			},
@@ -35,13 +35,13 @@ export default defineConfig({
 				text: "Introduction",
 				items: [
 					{ text: "What is AI-Lint?", link: "/" },
-					{ text: "Getting Started", link: "/markdown-examples" },
+					{ text: "Getting Started", link: "/guide" },
 				],
 			},
 			{
 				text: "Guide",
 				items: [
-					{ text: "Markdown Examples", link: "/markdown-examples" },
+					{ text: "Markdown Examples", link: "/guide" },
 					{ text: "Runtime API Examples", link: "/api-examples" },
 				],
 			},
