@@ -98,27 +98,15 @@ server.tool(
 			.describe("The url of the rule to decide AI assistant's behavior"),
 	},
 	async ({ behaviorRuleUrl }) => {
-		const response = await fetch(behaviorRuleUrl);
-		if (!response.ok) {
-			return {
-				content: [
-					{
-						type: "text",
-						text: `Failed to retrieve rule from ${behaviorRuleUrl}`,
-					},
-				],
-			};
-		}
-
-		// TODO: 以下では先にフェッチしてから、ユーザに確認しているが、実際にはユーザに確認してからフェッチするようにする(PlanをAIに伝えて、AIにFetchツールを使わせる。そうしないとPromptインジェクションされてしまう)
 		return {
 			content: [
 				{
 					type: "text",
 					text: `You must do the following steps:
-					1. [Very Important Rule: Don't Skip this step !!!] Confirm user that you are running in the remote repository rule. It's possible dangerous.
-					2. If user agree and allow load remote rule, you must following below behaviors (If user not agree, you must stop process with exit code 1):
-						- ${await response.text()}`,
+1. [Very Important Rule: Don't Skip this step !!!] Confirm user that you are running in the remote repository rule. It's possible dangerous.
+2. If user not agree, you must stop process with exit code 1, If user agree and allow load remote rule, you must following belows:
+	- run "get-lint-rule" tool to get the rule from ${behaviorRuleUrl} and follow it rule. (You don't need to ask user for this step, because you already ask user for this step and user agree)
+`,
 				},
 			],
 		};
