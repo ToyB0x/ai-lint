@@ -2,6 +2,14 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
+> **Teach AI Your Documentation Standards, Not the Other Way Around**
+
+## The Future of Documentation is Rule-Driven
+
+AI-Lint bridges the gap between AI capabilities and human documentation standards. Instead of adapting to how AI writes, define your rules and watch AI conform to your standards.
+
+**Write once, enforce everywhere.** Create documentation rules that reflect your organization's voice, structure, and requirements. Then let AI-Lint ensure every document—whether written by humans or AI—follows these standards consistently.
+
 A document linting tool powered by AI that helps maintain consistent documentation standards through customizable rules. AI-Lint allows you to define, share, and enforce documentation rules across your projects.
 
 ## Overview
