@@ -93,7 +93,9 @@ server.tool(
 	"load-remote-act-rule",
 	"Load the rule for AI assistant to decide AI assistant's behavior from remote repository",
 	{
-		behaviorRuleUrl: z.string().describe("The url of the rule to decide AI assistant's behavior"),
+		behaviorRuleUrl: z
+			.string()
+			.describe("The url of the rule to decide AI assistant's behavior"),
 	},
 	async ({ behaviorRuleUrl }) => {
 		const response = await fetch(behaviorRuleUrl);
