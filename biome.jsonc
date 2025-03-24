@@ -12,7 +12,8 @@
 			"**/build/**",
 			"**/dist/**",
 			"**/generated/**",
-			"**/.turbo/**"
+			"**/.turbo/**",
+			"**/.vitepress/cache/**"
 		]
 	},
 	"formatter": {

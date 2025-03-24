@@ -1,21 +1,21 @@
 {
-  "name": "@ai-lint/web",
-  "version": "0.0.1",
-  "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview",
-    "//currently no custom vite ts file //typecheck": "tsc --noEmit"
-  },
-  "devDependencies": {
-    "@tsconfig/strictest": "2.0.5",
-    "@types/node": "22.13.5",
-    "vitepress": "latest",
-    "typescript": "5.7.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ToyB0x/ai-lint.git"
-  },
-  "private": true
+	"name": "@ai-lint/web",
+	"version": "0.0.1",
+	"scripts": {
+		"docs:dev": "vitepress dev",
+		"docs:build": "vitepress build",
+		"docs:preview": "vitepress preview",
+		"//currently no custom vite ts file //typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@tsconfig/strictest": "2.0.5",
+		"@types/node": "22.13.5",
+		"vitepress": "v2.0.0-alpha.4",
+		"typescript": "5.7.3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ToyB0x/ai-lint.git"
+	},
+	"private": true
 }
