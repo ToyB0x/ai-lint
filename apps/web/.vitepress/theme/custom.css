@@ -53,14 +53,6 @@
   box-shadow: 0 5px 15px rgba(100, 108, 255, 0.1);
 }
 
-/* Feature icons */
-.VPFeature .icon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
 .VPFeature:hover .icon {
   transform: scale(1.2);
 }
