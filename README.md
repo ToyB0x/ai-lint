@@ -1,8 +1,8 @@
-# AI-Lint
+# AI-Lint: Comprehensive AI Behavior Control Platform
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-> **Teach AI Your Documentation Standards, Not the Other Way Around**
+> **Control AI Behavior Across Your Entire Development Ecosystem**
 
 <div align="center">
   <h2>📚 <a href="https://ai-lint.com/">Official Documentation Site</a> 📚</h2>
@@ -12,18 +12,29 @@
 
 ## Overview
 
-AI-Lint is a tool that allows you to load rules from a Rule Registry to control AI behavior in LLM-powered code development. This approach brings numerous benefits including improved code quality, consistency, and early error detection.
+AI-Lint is a comprehensive platform for controlling AI behavior through rules loaded from a Rule Registry. While traditional linters focus solely on code quality, AI-Lint extends this concept to your entire development ecosystem - from code and documentation to development workflows and LLM interactions.
 
-**AI conforms to your standards, not the other way around.** Create documentation rules that reflect your organization's style, structure, and requirements, then use AI-Lint to ensure all documents—whether written by humans or AI—consistently follow these standards.
+**AI conforms to your standards, not the other way around.** Define rules that reflect your organization's style, structure, and requirements across all aspects of development. Whether you're creating documentation, optimizing workflows, or customizing LLM behavior, AI-Lint ensures consistency and quality throughout your development process.
 
 ### Key Features
 
-- **Rule-Based Linting**: Check documents against specified rules
-- **Auto-Fix Capability**: Automatically fix linting errors
-- **Flexible Rule System**: Create, share, and extend rules
+AI-Lint transforms how teams work with AI across four key areas:
+
+#### AI Behavior Control
+- **Flexible Rule System**: Create, share, and extend rules for all aspects of development
+- **Rule Registry**: Load rules from local files or remote repositories with version control
 - **MCP Server Integration**: Seamless integration with AI tools
-- **Rule Registry**: Load rules from local files or remote repositories
-- **Rule Management**: Add, update, remove, and prioritize rules
+
+#### Documentation Excellence
+- **Documentation Standards**: Define and enforce consistent documentation practices
+- **Auto-Fix Capability**: Automatically fix documentation issues
+
+#### Development Workflow Enhancement
+- **Workflow Optimization**: Create rules with LLM assistance for better development workflows
+- **Cross-Team Collaboration**: Involve PO/PdM/Business teams in rule creation
+
+#### LLM Interaction Improvement
+- **Behavior Customization**: Tailor AI outputs to match your organization's specific needs
 
 ## Quick Start
 
