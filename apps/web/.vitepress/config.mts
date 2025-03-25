@@ -41,9 +41,7 @@ export default defineConfig({
 		sidebar: [
 			{
 				text: "Introduction",
-				items: [
-					{ text: "Concept", link: "/concept" },
-				],
+				items: [{ text: "Concept", link: "/concept" }],
 			},
 			{
 				text: "Guide",
