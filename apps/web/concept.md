@@ -75,10 +75,6 @@ Ruleレジストリからのルール読み込みにより、ルールの更新�
 LLMが組織の定める複雑なコーディング規約を理解し、コード生成時やレビュー時に自動的に適用することで、開発者による規約違反を減らし、コードベース全体の一貫性を高めることができます。
 
 <div class="vp-code-group">
-<div class="vp-code-group-nav">
-<button class="vp-code-group-nav-tab">問題点</button>
-<button class="vp-code-group-nav-tab">AI-Lintの解決策</button>
-</div>
 <div class="vp-code-group-content">
 
 ```markdown [問題点]
