@@ -26,11 +26,12 @@ export default defineConfig({
 		// logo: '/logo.svg',
 		nav: [
 			{ text: "Home", link: "/" },
-			{ text: "Guide", link: "/guide" },
+			{ text: "Guide", link: "/concept" },
 			{ text: "API", link: "/api" },
 			{
 				text: "Resources",
 				items: [
+					{ text: "Concept", link: "/concept" },
 					{ text: "Guide", link: "/guide" },
 					{ text: "API Reference", link: "/api" },
 				],
@@ -40,15 +41,12 @@ export default defineConfig({
 		sidebar: [
 			{
 				text: "Introduction",
-				items: [
-					{ text: "What is AI-Lint?", link: "/" },
-					{ text: "Getting Started", link: "/guide" },
-				],
+				items: [{ text: "Concept", link: "/concept" }],
 			},
 			{
 				text: "Guide",
 				items: [
-					{ text: "Basics", link: "/guide" },
+					{ text: "Getting Started", link: "/guide" },
 					{ text: "Rules", link: "/api" },
 				],
 			},
