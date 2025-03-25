@@ -16,6 +16,8 @@ AI-Lint is a tool that allows you to load rules from a Rule Registry to control 
 
 **AI conforms to your standards, not the other way around.** Create documentation rules that reflect your organization's style, structure, and requirements, then use AI-Lint to ensure all documents—whether written by humans or AI—consistently follow these standards.
 
+AI-Lint goes beyond traditional code linting. It enhances documentation quality, improves development workflows with LLM-assisted rule creation, and enables teams to refine LLM behavior itself through customizable rule definitions.
+
 ### Key Features
 
 - **Rule-Based Linting**: Check documents against specified rules
@@ -24,6 +26,10 @@ AI-Lint is a tool that allows you to load rules from a Rule Registry to control 
 - **MCP Server Integration**: Seamless integration with AI tools
 - **Rule Registry**: Load rules from local files or remote repositories
 - **Rule Management**: Add, update, remove, and prioritize rules
+- **Documentation Enhancement**: Improve the quality of development documentation
+- **Workflow Optimization**: Create rules with LLM assistance to establish better development workflows
+- **Cross-Team Collaboration**: Involve PO/PdM/Business teams in rule creation for better alignment
+- **LLM Behavior Refinement**: Improve LLM behavior through best practices in rule definition
 
 ## Quick Start
 
