@@ -27,11 +27,13 @@ export default defineConfig({
 		nav: [
 			{ text: "Home", link: "/" },
 			{ text: "Guide", link: "/guide" },
+			{ text: "Concepts", link: "/concepts" },
 			{ text: "API", link: "/api" },
 			{
 				text: "Resources",
 				items: [
 					{ text: "Guide", link: "/guide" },
+					{ text: "Concepts", link: "/concepts" },
 					{ text: "API Reference", link: "/api" },
 				],
 			},
@@ -50,6 +52,12 @@ export default defineConfig({
 				items: [
 					{ text: "Basics", link: "/guide" },
 					{ text: "Rules", link: "/api" },
+				],
+			},
+			{
+				text: "Concepts",
+				items: [
+					{ text: "リモートルール読み込みツール", link: "/concepts" },
 				],
 			},
 		],
