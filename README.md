@@ -5,9 +5,9 @@
 > **Teach AI Your Documentation Standards, Not the Other Way Around**
 
 <div align="center">
-  <h2>📚 <a href="http://ai-lint.com/">Official Documentation Site</a> 📚</h2>
+  <h2>📚 <a href="https://ai-lint.com/">Official Documentation Site</a> 📚</h2>
   <p>For detailed usage and rule configuration, please visit our official documentation</p>
-  <p><a href="http://ai-lint.com/">http://ai-lint.com/</a></p>
+  <p><a href="https://ai-lint.com/">https://ai-lint.com/</a></p>
 </div>
 
 ## Overview
@@ -51,7 +51,7 @@ Add to your MCP server configuration file (adjust the path to your installation)
 ```
 
 <div align="center">
-  <h3>🔍 For more detailed information, check our <a href="http://ai-lint.com/">official documentation</a> 🔍</h3>
+  <h3>🔍 For more detailed information, check our <a href="https://ai-lint.com/">official documentation</a> 🔍</h3>
 </div>
 
 ## Basic Usage
