@@ -24,7 +24,7 @@ export default defineConfig({
 			{
 				text: "Resources",
 				items: [
-					{ text: "Rule Examples", link: "/guide" },
+					{ text: "Guide", link: "/guide" },
 					{ text: "API Reference", link: "/api" },
 				]
 			},
@@ -41,8 +41,8 @@ export default defineConfig({
 			{
 				text: "Guide",
 				items: [
-					{ text: "Markdown Examples", link: "/guide" },
-					{ text: "Runtime API Examples", link: "/api" },
+					{ text: "Basics", link: "/guide" },
+					{ text: "Rules", link: "/api" },
 				],
 			},
 		],
