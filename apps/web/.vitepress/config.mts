@@ -26,14 +26,13 @@ export default defineConfig({
 		// logo: '/logo.svg',
 		nav: [
 			{ text: "Home", link: "/" },
-			{ text: "Guide", link: "/guide" },
-			{ text: "Concepts", link: "/concepts" },
+			{ text: "Guide", link: "/concept" },
 			{ text: "API", link: "/api" },
 			{
 				text: "Resources",
 				items: [
+					{ text: "Concept", link: "/concept" },
 					{ text: "Guide", link: "/guide" },
-					{ text: "Concepts", link: "/concepts" },
 					{ text: "API Reference", link: "/api" },
 				],
 			},
@@ -43,21 +42,14 @@ export default defineConfig({
 			{
 				text: "Introduction",
 				items: [
-					{ text: "What is AI-Lint?", link: "/" },
-					{ text: "Getting Started", link: "/guide" },
+					{ text: "Concept", link: "/concept" },
 				],
 			},
 			{
 				text: "Guide",
 				items: [
-					{ text: "Basics", link: "/guide" },
+					{ text: "Getting Started", link: "/guide" },
 					{ text: "Rules", link: "/api" },
-				],
-			},
-			{
-				text: "Concepts",
-				items: [
-					{ text: "リモートルール読み込みツール", link: "/concepts" },
 				],
 			},
 		],
