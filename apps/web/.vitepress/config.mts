@@ -16,7 +16,7 @@ export default defineConfig({
 	lastUpdated: true,
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
-		logo: '/logo.svg',
+		// logo: '/logo.svg',
 		nav: [
 			{ text: "Home", link: "/" },
 			{ text: "Guide", link: "/guide" },

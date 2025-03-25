@@ -54,7 +54,7 @@ AI-Lint is an experimental project exploring AI capabilities for document lintin
 # Quick installation
 git clone https://github.com/ToyB0x/ai-lint.git
 cd ai-lint
-pnpm install
+pnpm install && pnpm build
 ```
 
 ::: code-group

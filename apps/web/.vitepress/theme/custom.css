@@ -4,14 +4,14 @@
   --vp-c-brand-lighter: #9499ff;
   --vp-c-brand-dark: #535bf2;
   --vp-c-brand-darker: #454ce1;
-  
+
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(
     120deg,
     #bd34fe 30%,
     #646cff
   );
-  
+
   --vp-home-hero-image-background-image: linear-gradient(
     120deg,
     #bd34fe 10%,
@@ -120,7 +120,7 @@ h2 {
   .VPFeature {
     padding: 1.5rem;
   }
-  
+
   .VPHomeHero .name {
     font-size: 3rem;
   }
