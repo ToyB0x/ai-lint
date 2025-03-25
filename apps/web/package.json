@@ -5,13 +5,16 @@
 		"docs:dev": "vitepress dev",
 		"docs:build": "vitepress build",
 		"docs:preview": "vitepress preview",
-		"//currently no custom vite ts file //typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"vue": "^3.5.13"
 	},
 	"devDependencies": {
 		"@tsconfig/strictest": "2.0.5",
 		"@types/node": "22.13.5",
-		"vitepress": "v2.0.0-alpha.4",
-		"typescript": "5.7.3"
+		"typescript": "5.7.3",
+		"vitepress": "v2.0.0-alpha.4"
 	},
 	"repository": {
 		"type": "git",

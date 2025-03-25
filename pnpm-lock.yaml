@@ -44,6 +44,10 @@ importers:
         version: 5.7.3
 
   apps/web:
+    dependencies:
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.13(typescript@5.7.3)
     devDependencies:
       '@tsconfig/strictest':
         specifier: 2.0.5
