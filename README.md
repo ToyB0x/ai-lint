@@ -16,34 +16,25 @@ AI-Lint is a comprehensive platform for controlling AI behavior through rules lo
 
 **AI conforms to your standards, not the other way around.** Define rules that reflect your organization's style, structure, and requirements across all aspects of development. Whether you're creating documentation, optimizing workflows, or customizing LLM behavior, AI-Lint ensures consistency and quality throughout your development process.
 
-AI-Lint transforms how teams work with AI by:
-- Enhancing documentation quality through consistent standards
-- Optimizing development workflows with LLM-assisted rule creation
-- Enabling cross-functional collaboration by involving PO/PdM/Business teams
-- Refining LLM behavior itself through customizable rule definitions
-
 ### Key Features
+
+AI-Lint transforms how teams work with AI across four key areas:
 
 #### AI Behavior Control
 - **Flexible Rule System**: Create, share, and extend rules for all aspects of development
-- **Rule Registry**: Load rules from local files or remote repositories
-- **Rule Management**: Add, update, remove, and prioritize rules
+- **Rule Registry**: Load rules from local files or remote repositories with version control
 - **MCP Server Integration**: Seamless integration with AI tools
 
 #### Documentation Excellence
 - **Documentation Standards**: Define and enforce consistent documentation practices
-- **Quality Assurance**: Ensure completeness, accuracy, and clarity in all documentation
 - **Auto-Fix Capability**: Automatically fix documentation issues
 
 #### Development Workflow Enhancement
-- **Workflow Optimization**: Create rules with LLM assistance to establish better development workflows
-- **Cross-Team Collaboration**: Involve PO/PdM/Business teams in rule creation for better alignment
-- **Process Standardization**: Ensure consistent development practices across teams
+- **Workflow Optimization**: Create rules with LLM assistance for better development workflows
+- **Cross-Team Collaboration**: Involve PO/PdM/Business teams in rule creation
 
 #### LLM Interaction Improvement
-- **LLM Behavior Refinement**: Improve LLM behavior through best practices in rule definition
-- **Customized AI Responses**: Tailor AI outputs to match your organization's needs
-- **Consistent AI Assistance**: Ensure AI tools provide consistent guidance across your organization
+- **Behavior Customization**: Tailor AI outputs to match your organization's specific needs
 
 ## Quick Start
 
